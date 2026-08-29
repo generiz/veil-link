@@ -1,0 +1,16 @@
+[package]
+name = "veil-link"
+version = "0.1.0"
+edition = "2021"
+description = "Minimal peer-to-peer encrypted terminal channel built on Noise XX"
+license = "MIT"
+
+[dependencies]
+anyhow = "1.0"
+blake2 = "0.10"
+clap = { version = "4.5", features = ["derive"] }
+hex = "0.4"
+snow = "0.9"
+rand_core = { version = "0.6", features = ["getrandom"] }
+x25519-dalek = { version = "2.0", features = ["static_secrets"] }
+zeroize = { version = "1.8", features = ["derive"] }
